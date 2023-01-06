@@ -61,7 +61,7 @@ jobs:
       - run: make push
         if: github.event_name != 'pull_request'
 
-      - uses: peaceiris/workflows/setup-git@v0.17.2
+      - uses: peaceiris/workflows/setup-git@v0.18.1
 
       - run: make release
         if: github.event_name == 'workflow_dispatch'
